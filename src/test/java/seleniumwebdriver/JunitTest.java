@@ -6,7 +6,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class JunitTest {
 	@Test
 	public void jUnitDemo() {
-	// TODO Auto-generated method stub
 			WebDriver driver=new ChromeDriver();
 			driver.get("https://demowebshop.tricentis.com/");
 			String title=driver.getTitle();

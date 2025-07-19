@@ -33,7 +33,8 @@ public class BaseDriver {
         driver.quit();
     }
 
-    public static void CloseFaultyWindows() {
+    @SuppressWarnings("deprecation")
+	public static void CloseFaultyWindows() {
         try {
             Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
         } catch (Exception ignored) {
