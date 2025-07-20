@@ -20,7 +20,8 @@ public class EntryExitStep extends BaseClass{
 	}
 	
 	@Then("Close the Browser")
-	public void close_the_browser() {
+	public void close_the_browser() throws InterruptedException {
+
 		driver.quit();
 	}	
 	

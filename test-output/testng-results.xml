@@ -1,94 +1,237 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-19T18:42:05 IST" name="Suite" finished-at="2025-07-19T18:42:05 IST" duration-ms="77">
+  <suite started-at="2025-07-20T11:04:26 IST" name="Suite" finished-at="2025-07-20T11:06:18 IST" duration-ms="112284">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebAutomationRunner@3d34d211]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebAutomationRunnerTestNG@3d34d211]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-07-19T18:42:05 IST" name="Test" finished-at="2025-07-19T18:42:05 IST" duration-ms="77">
-      <class name="testRunner.WebAutomationRunner">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.WebAutomationRunner@3d34d211]" started-at="2025-07-19T18:42:05 IST" name="setUpClass" finished-at="2025-07-19T18:42:05 IST" duration-ms="42" status="FAIL">
+    <test started-at="2025-07-20T11:04:26 IST" name="Test" finished-at="2025-07-20T11:06:18 IST" duration-ms="112284">
+      <class name="testRunner.WebAutomationRunnerTestNG">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:testRunner.WebAutomationRunnerTestNG@3d34d211]" started-at="2025-07-20T11:04:26 IST" name="setUpClass" finished-at="2025-07-20T11:04:26 IST" duration-ms="598" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@38cee291]]>
+                <![CDATA[org.testng.TestRunner@57a667c8]]>
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[The plugin specification 'com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:target/extentReports/report.html' has a problem:
-
-Could not load plugin class 'com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter'.
-
-Plugin specifications should have the format of PLUGIN[:[PATH|[URI [OPTIONS]]]
-
-Valid values for PLUGIN are: html, json, junit, message, pretty, progress, rerun, summary, teamcity, testng, timeline, unused, usage
-
-PLUGIN can also be a fully qualified class name, allowing registration of 3rd party plugins. The 3rd party plugin must implement io.cucumber.plugin.Plugin]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: The plugin specification 'com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:target/extentReports/report.html' has a problem:
-
-Could not load plugin class 'com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter'.
-
-Plugin specifications should have the format of PLUGIN[:[PATH|[URI [OPTIONS]]]
-
-Valid values for PLUGIN are: html, json, junit, message, pretty, progress, rerun, summary, teamcity, testng, timeline, unused, usage
-
-PLUGIN can also be a fully qualified class name, allowing registration of 3rd party plugins. The 3rd party plugin must implement io.cucumber.plugin.Plugin
-at io.cucumber.core.options.PluginOption.createCouldNotLoadClass(PluginOption.java:167)
-at io.cucumber.core.options.PluginOption.parsePluginName(PluginOption.java:145)
-at io.cucumber.core.options.PluginOption.parse(PluginOption.java:104)
-at io.cucumber.core.options.RuntimeOptionsBuilder.addPluginName(RuntimeOptionsBuilder.java:68)
-at io.cucumber.core.options.CucumberOptionsAnnotationParser.addPlugins(CucumberOptionsAnnotationParser.java:85)
-at io.cucumber.core.options.CucumberOptionsAnnotationParser.parse(CucumberOptionsAnnotationParser.java:39)
-at io.cucumber.testng.TestNGCucumberRunner.<init>(TestNGCucumberRunner.java:85)
-at io.cucumber.testng.AbstractTestNGCucumberTests.setUpClass(AbstractTestNGCucumberTests.java:27)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Caused by: java.lang.ClassNotFoundException: com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter
-at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)
-at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)
-at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
-at io.cucumber.core.options.PluginOption.parsePluginName(PluginOption.java:139)
-... 30 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.WebAutomationRunner@3d34d211]" started-at="2025-07-19T18:42:05 IST" name="tearDownClass" finished-at="2025-07-19T18:42:05 IST" duration-ms="1" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebAutomationRunnerTestNG@3d34d211]" started-at="2025-07-20T11:04:26 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-20T11:04:34 IST" duration-ms="7869" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login complete"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebAutomationRunnerTestNG@3d34d211]" started-at="2025-07-20T11:04:34 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-20T11:04:41 IST" duration-ms="6942" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful login complete"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebAutomationRunnerTestNG@3d34d211]" started-at="2025-07-20T11:04:41 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-20T11:04:50 IST" duration-ms="8778" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful registration complete"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebAutomationRunnerTestNG@3d34d211]" started-at="2025-07-20T11:04:50 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-20T11:04:59 IST" duration-ms="8918" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful registration complete"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebAutomationRunnerTestNG@3d34d211]" started-at="2025-07-20T11:04:59 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-20T11:05:08 IST" duration-ms="9198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful registration complete"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Registration"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebAutomationRunnerTestNG@3d34d211]" started-at="2025-07-20T11:05:08 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-20T11:05:27 IST" duration-ms="19229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add a CellPhones to cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add/Remove item to cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebAutomationRunnerTestNG@3d34d211]" started-at="2025-07-20T11:05:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-20T11:05:39 IST" duration-ms="11521" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Clear cart"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add/Remove item to cart"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebAutomationRunnerTestNG@3d34d211]" started-at="2025-07-20T11:05:39 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-20T11:05:47 IST" duration-ms="8099" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add an item to wishlist"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add/Remove item to wishlist"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.StaleElementReferenceException">
+            <message>
+              <![CDATA[stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.158)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [baee20517f4272ac850993505661546f, sendKeysToElement {value=[Ljava.lang.CharSequence;@632383b9, id=f.8C47D112BB24CF81FD9467052EBC3F87.d.982ADB2DE782B5D83017479F6BBC054B.e.367}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\SAIKIR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57242}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57242/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (baee20517f4272ac850993505661546f)] -> id: small-searchterms]
+Session ID: baee20517f4272ac850993505661546f]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=138.0.7204.158)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [baee20517f4272ac850993505661546f, sendKeysToElement {value=[Ljava.lang.CharSequence;@632383b9, id=f.8C47D112BB24CF81FD9467052EBC3F87.d.982ADB2DE782B5D83017479F6BBC054B.e.367}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.158, chrome: {chromedriverVersion: 138.0.7204.157 (e533e98b126..., userDataDir: C:\Users\SAIKIR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57242}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57242/devtoo..., se:cdpVersion: 138.0.7204.158, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (baee20517f4272ac850993505661546f)] -> id: small-searchterms]
+Session ID: baee20517f4272ac850993505661546f
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy25.sendKeys(Unknown Source)
+at pageFactory.Wishlist.search(Wishlist.java:46)
+at stepDefinition.StepDef.enter_in_search_box(StepDef.java:189)
+at ✽.Enter "Camera" in Search Box(file:///D:/SeleniumJava/SeleniumFramework_Java/src/test/resources/features/Wishlist.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebAutomationRunnerTestNG@3d34d211]" started-at="2025-07-20T11:05:47 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-20T11:06:06 IST" duration-ms="19087" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Add an item to wishlist"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add/Remove item to wishlist"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:testRunner.WebAutomationRunnerTestNG@3d34d211]" started-at="2025-07-20T11:06:06 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-07-20T11:06:18 IST" duration-ms="11899" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Clear wishlist"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Add/Remove item to wishlist"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:testRunner.WebAutomationRunnerTestNG@3d34d211]" started-at="2025-07-20T11:06:18 IST" name="tearDownClass" finished-at="2025-07-20T11:06:18 IST" duration-ms="67" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-      </class> <!-- testRunner.WebAutomationRunner -->
+      </class> <!-- testRunner.WebAutomationRunnerTestNG -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
