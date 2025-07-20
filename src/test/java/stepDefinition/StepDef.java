@@ -2,6 +2,7 @@ package stepDefinition;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
@@ -26,7 +27,7 @@ public class StepDef extends BaseClass{
 	//Common
 	
 	@When("User opens URL {string}")
-	public void user_opens_url(String url) {
+	public void user_opens_url(String url) throws IOException {
 		driver.manage().window().maximize();
 		driver.get(url);
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

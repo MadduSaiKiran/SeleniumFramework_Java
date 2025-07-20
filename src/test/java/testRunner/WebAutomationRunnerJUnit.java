@@ -14,7 +14,7 @@ import io.cucumber.junit.CucumberOptions;
     },
     monochrome = true,                               // better console output
     dryRun = false,                                  // true = check mappings only
-    tags = "@sanity"                              // optional: run scenarios with this tag
+    tags = "@Sai"                              // optional: run scenarios with this tag
 )
 public class WebAutomationRunnerJUnit {
     // No code is needed here. Runner is driven by annotations.

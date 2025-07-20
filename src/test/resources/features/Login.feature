@@ -1,5 +1,5 @@
 Feature: Login
-@sanity @regression
+@sanity @regression @Sai
 Scenario Outline: Successful login complete
 	Given User launchs Browser
 	When User opens URL "https://demowebshop.tricentis.com/"
