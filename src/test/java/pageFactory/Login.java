@@ -65,6 +65,9 @@ public class Login {
 	
 	public String profileName()
 	{
-		return profile.getText();
+		//return profile.getText();
+		/*another approach with properties file*/
+		By duplicateOfprofile=By.xpath(prop.getProperty("profile"));
+		return logDriver.findElement(duplicateOfprofile).getText();
 	}
 }
