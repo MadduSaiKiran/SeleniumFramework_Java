@@ -10,7 +10,7 @@ public class First {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		WebDriver driver=new ChromeDriver();
-		driver.get("https://demowebshop.tricentis.com/");
+		driver.get("https://www.orangehrm.com/orangehrm-30-day-trial/");
 		String title=driver.getTitle();
 		System.out.println(title);
 		//Assert.assertEquals(title,"Demo Web Shop");
